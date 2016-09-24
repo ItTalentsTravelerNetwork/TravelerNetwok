@@ -53,7 +53,7 @@ public class RegistrationServlet extends HttpServlet {
 				UsersManager.getInstance().registerUser(firstName, lastName, email, inputPassword, description, null);
 			}
 			System.out.println("User Registration Successful!");
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("SignIn.jsp");
 		} else {
 			System.out.println("Registration failed! Password is incorrect!");
 			RequestDispatcher view = request.getRequestDispatcher("SignUp.jsp");
